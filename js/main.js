@@ -1,54 +1,69 @@
 "use strict";
 
-//Milestone 0  e 1 
+//Milestone 0  
 
-const team = [];
-
-const Ceo = {
+const team = [{
     nome: "Wayne Barnett",
     ruolo: "Founder e CEO",
     img: "wayne-barnett-founder-ceo.jpg"
-}
-console.log(Ceo)
+},
 
-const Editor = {
+{
     nome: "Angela Caroll",
     ruolo: "Chief Editor",
     img: "angela-caroll-chief-editor.jpg"
-}
-console.log(Editor)
+},
 
-const OManager = {
+{
     nome: "Walter Gordon",
     ruolo: "Office Manager",
     img: "walter-gordon-office-manager.jpg"
-}
-console.log(OManager)
+},
 
-const SMManager = {
+{
     nome: "Angela Lopez",
     ruolo: "Social Media Manager",
     img: "angela-lopez-social-media-manager.jpg"
-}
-console.log(SMManager)
+},
 
-const Developer = {
+{
     nome: "Scott Estrada",
     ruolo: "Developer",
     img: "scott-estrada-developer.jpg"
-}
-console.log(Developer)
+},
 
-const Designer = {
+{
     nome: "Barbara Ramos",
     ruolo: "Graphic Designer",
     img: "barbara-ramos-graphic-designer.jpg"
 }
-console.log(Designer)
+];
 
-team.push(Ceo, Editor, OManager, SMManager, Developer, Designer)
+//Milestone 1
+console.log(Object.values(team))
 
-console.log(team)
+console.log(team[0])
+console.log(team[1])
+console.log(team[2])
+console.log(team[3])
+console.log(team[4])
+console.log(team[5])
+
+//Milestone 2
+
+const primo = document.getElementById('primo');
+const secondo = document.getElementById('secondo');
+const terzo = document.getElementById('terzo');
+const quarto = document.getElementById('quarto');
+const quinto = document.getElementById('quinto');
+const sesto = document.getElementById('sesto');
+
+primo.innerHTML = Object.values(team[0]);
+secondo.innerHTML = Object.values(team[1]);
+terzo.innerHTML = Object.values(team[2]);
+quarto.innerHTML = Object.values(team[3]);
+quinto.innerHTML = Object.values(team[4]);
+sesto.innerHTML = Object.values(team[5]);
 
 
 
